@@ -3,7 +3,8 @@ Developer's test exercise
 Knowit has developed an imaginary Student Information System for Knowit's University. It consists of JAVA 8 restful API and AngularJS frontend. You can download the code  from Bitbucket repository. 
 
 Your task is to enhance the API and frontend code. The main tasks are following:
-1. The API must calculate and frontend show the weighted average grade  of student grades;
+
+1. The API must calculate and frontend show the weighted average grade  of student grades.
 2. The user can enter new grades for students from the frontend, sent to the API and saved to the database.
 
 Additional tasks, if you would like to earn extra credits:
