@@ -8,12 +8,14 @@ Your task is to enhance the API and frontend code. The main tasks are following:
 2. The user can enter new grades for students from the frontend, sent to the API and saved to the database.
 
 Additional tasks, if you would like to earn extra credits:
+
 1. The user can delete grades for students from the frontend, sent to the API and deleted from the database.
 2. The user can edit grades for students from the frontend, sent to the API and deleted from the database.
 3. Package the software with docker.
 4. Add the database change migration library.
 
 You will be evaluated based on the following criteria:
+
 * Semantics
 * Logics
 * Written unit tests
