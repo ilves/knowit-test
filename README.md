@@ -1,4 +1,5 @@
-Developer's test exercise 
+Developer's test exercise
+-------------------------
 Knowit has developed an imaginary Student Information System for Knowit's University. It consists of JAVA 8 restful API and AngularJS frontend. You can download the code  from Btibucket repository. 
 
 Your task is to enhance the API and frontend code. The main tasks are following:
