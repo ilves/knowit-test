@@ -298,11 +298,11 @@ INSERT INTO grade (id, student_id, subject_id, grade, weight) VALUES (nextval('g
 
 SELECT pg_catalog.setval('student_id_seq', 1, true);
 
-INSERT INTO student (id, first_name, last_name) VALUES (1, 'Anu', 'Saagim');
-INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Jaan', 'Pehk');
-INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Vaiko', 'Eplik');
-INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Jaan', 'Mürk');
-INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Edgar', 'Savisaar');
+INSERT INTO student (id, first_name, last_name) VALUES (1, 'John', 'Smith');
+INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Mart', 'Tamm');
+INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Mart', 'Maasika');
+INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Martin', 'Mürk');
+INSERT INTO student (id, first_name, last_name) VALUES (nextval('student_id_seq'), 'Kurt', 'Tumm');
 
 
 
