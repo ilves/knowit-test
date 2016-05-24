@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spring boot and Angularjs Tutorial</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Student Information System for Knowit's University</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" ng-controller="NavbarCtrl" >
+            <ul class="nav nav-sidebar">
+                <li ng-class="{'active': $route.current.activetab == 'dashboard'}"><a href="#/">Dashboard</a></li>
+                <li ng-class="{'active': $route.current.activetab == 'students'}"><a href="#/students">Students</a></li>
+                <li ng-class="{'active': $route.current.activetab == 'grades'}"><a href="#/grades">Grades</a></li>
+                <li ng-class="{'active': $route.current.activetab == 'subjects'}"><a href="#/subjects">Subjects</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div ng-view=""></div>
+        </div>
+    </div>
+</div>
+
+<script src="/webjars/jquery/2.1.4/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/webjars/angularjs/1.4.9/angular.js"></script>
+<script src="/webjars/angularjs/1.4.9/angular-resource.js"></script>
+<script src="/webjars/angularjs/1.4.9/angular-route.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/controller.js"></script>
+</body>
+</html>

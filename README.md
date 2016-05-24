@@ -1,35 +1,35 @@
-Developer's test exercise
+Developer's test exercise solution
 -------------------------
-Knowit has developed an imaginary Student Information System for Knowit's University. It consists of JAVA 8 restful API and AngularJS frontend. You can download the code  from Bitbucket repository. 
 
-Your task is to enhance the API and frontend code. The main tasks are following:
+## Installation
 
-1. The API must calculate and frontend show the weighted average grade  of student grades.
-2. The user can enter new grades for students from the frontend, sent to the API and saved to the database.
-
-Additional tasks, if you would like to earn extra credits:
-
-1. The user can delete grades for students from the frontend, sent to the API and deleted from the database.
-2. The user can edit grades for students from the frontend, sent to the API and deleted from the database.
-3. Package the software with docker.
-4. Add the database change migration library.
-
-You will be evaluated based on the following criteria:
-
-* Semantics
-* Logics
-* Written unit tests
-* Included documentation
-* Repository usage and best practice
-
-Choose your methods, present the outcomes and report us, how much time it took by task. Be prepared to present your work in 10 minutes to the live audience.
-
-
-## Java Sample Exercise Grades Service
-
-* Install postgres and add DB user and pass to application.properties
-* Import database from knowit_challenge.sql file
+* Install postgres and add DB url, database name, user and password to application.properties and pom.xml
+* To import database run: mvn sql:execute && mvn flyway:baseline && mvn flyway:migrate
 * Run application with command: mvn install && mvn spring-boot:run
-* When application is up and running, grades can be accessed from url: http://localhost:8080/grades
+* When application is up and running, grades can be accessed from url: http://localhost:8080/
 
-All the copyright of the code goes to Knowit Estonia OÜ after submitting the code to Knowit e-mail.
+## Estimated time spent on a task
+* Learning AngularJS - 1h
+* Learning flyway & setup - 0.5h
+* Postgres setup - 0.2h
+* REST API development - 3h
+* UI development - 2h
+* Unit tests - 1.5h
+* Manual testing - 0.5h
+* Other - 0.3h
+
+Total: 9h
+
+## Todo
+What I would add, If I would have more time.
+* Pagination and sorting support to REST API and UI
+* Error message structure to REST API
+* More and better exceptions and their descriptions
+* Annotations to generate REST documentation (swagger)
+* Better logging (all requests/responses)
+* UI tests
+* Authentication support
+* Docker support (I was not sure if the db should be added to the image or not, as I have little experience with docker)
+
+## Comments
+* I did not comment methods or classes, as the method names, spring annotations and variable names are self explanatory and explain quite well what the code should and is doing

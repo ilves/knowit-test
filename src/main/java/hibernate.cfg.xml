@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/knowit_challenge</property>
+        <property name="connection.url">jdbc:postgresql://192.168.99.100:5432/knowit_challenge</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <mapping class="ee.knowit.challenge.entity.GradeEntity"/>
         <mapping class="ee.knowit.challenge.entity.StudentEntity"/>

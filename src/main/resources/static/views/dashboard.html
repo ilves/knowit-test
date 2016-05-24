@@ -1,0 +1,21 @@
+<div class="section">
+    <h1>
+        Dashboard
+    </h1>
+    <div>
+        <table class="table table-striped">
+            <tr>
+                <th>Student</th>
+                <th>Weighted Grade</th>
+            </tr>
+            <tr ng-repeat="(key, model) in reports">
+                <td>
+                    {{model.student.fullName}}
+                </td>
+                <td>
+                    {{model.weightedGrade}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
